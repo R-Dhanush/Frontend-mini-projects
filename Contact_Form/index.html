@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    form {
+      width: 300px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h2>Contact us</h2>
+
+  <form action="#" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required>
+    <hr>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+    <hr>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+    <hr>
+
+    <label for="age">Age :</label>
+    <input type="number" id="age" name="age" min="18" max="60">
+
+    <hr>
+
+    <label for="gender">Gender :</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <hr>
+
+    <label>Hobbies :</label>
+    <input type="checkbox" name="hobbies" value="reading"> Reading
+    <input type="checkbox" name="hobbies" value="gaming"> Gaming
+    <input type="checkbox" name="hobbies" value="sports"> Sports
+
+    <hr>
+
+    <label>Subscription :</label>
+    <input type="radio" name="subscription" value="yes"> Yes
+    <input type="radio" name="subscription" value="no"> No
+
+    <hr>
+
+    <label for="message">Message :</label>
+    <br>
+    <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+    <hr>
+
+    <button type="submit">Send Message</button>
+    <button type="reset">Clear</button>
+  </form>
+</body>
+</html>
